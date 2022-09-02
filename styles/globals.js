@@ -12,12 +12,10 @@ const GlobalStyles = createGlobalStyle`
   }
   
   body {
-    font-family: ${(props) => props.theme.fonts.main};
     font-size: 1rem;
-    background: ${(props) => props.theme.colors.background1};
-    color: ${(props) => props.theme.colors.primary1};
+    color: black;
     cursor: default;
-    background-color: #000;
+    background-color: ${(props) => props.theme.colors.bg.primaryBg};
   }
   
   h1,

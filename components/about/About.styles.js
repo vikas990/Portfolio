@@ -212,7 +212,7 @@ export const Intro = styled.p`
 `;
 
 export const Button = styled.button`
-  color: ${(props) => props.theme.colors.text.primary};
+  color: white;
   background-color: ${(props) => props.theme.colors.text.secondary};
   font-size: 1rem;
   padding: 1rem;

@@ -1,4 +1,4 @@
-const light = {
+const dark = {
   colors: {
     bg: {
       primaryBg: "#000000",
@@ -6,6 +6,30 @@ const light = {
 
     text: {
       primary: "white",
+      secondary: "#DB2048",
+    },
+
+    primary: {
+      c1: "hsl(191, 31%, 20%)",
+      c2: "#ffea4f",
+      c3: "#2f454a",
+    },
+    secondary: {
+      c1: "#fff",
+      c2: "#0276F9",
+      c3: "#2f454a",
+    },
+  },
+};
+
+const light = {
+  colors: {
+    bg: {
+      primaryBg: "white",
+    },
+
+    text: {
+      primary: "black",
       secondary: "#DB2048",
     },
 
@@ -46,3 +70,4 @@ const defaultTheme = {
 };
 
 export const lightTheme = { ...defaultTheme, ...light };
+export const DarkTheme = { ...defaultTheme, ...dark };

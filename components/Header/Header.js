@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import React from "react";
+import React, { useEffect } from "react";
 import {
   IconSection,
   Line,
@@ -11,8 +11,14 @@ import {
   Profile,
   SectionHeading,
 } from "./Header.styles";
+import ModeNightIcon from "@mui/icons-material/ModeNight";
+import LightModeIcon from "@mui/icons-material/LightMode";
 
-const Header = () => {
+const Header = ({ setTheme, theme }) => {
+  const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
   return (
     <MainContainer>
       <IconSection>
@@ -41,6 +47,17 @@ const Header = () => {
         <Name>Vikas Kumar</Name>
         <Profile>MERN Stack Developer</Profile>
       </MidSection>
+      {theme === "light" ? (
+        <ModeNightIcon
+          onClick={themeToggler}
+          style={{ color: "#DB2048", marginRight: "-1rem" }}
+        />
+      ) : (
+        <LightModeIcon
+          onClick={themeToggler}
+          style={{ color: "#DB2048", marginRight: "-1rem" }}
+        />
+      )}
       <Link href="#">Scroll Down</Link>
     </MainContainer>
   );
