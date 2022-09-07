@@ -35,7 +35,7 @@ const light = {
     text: {
       primary: "black",
       secondary: "#DB2048",
-      ternary: "white",
+      ternary: "black",
       navBackground: "white",
       linkBgColor: "grey",
       navColor: "white",

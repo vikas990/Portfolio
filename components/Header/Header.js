@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import {
   IconSection,
+  LeftContainer,
   Line,
   Link,
   MainContainer,
@@ -47,18 +48,22 @@ const Header = ({ setTheme, theme }) => {
         <Name>Vikas Kumar</Name>
         <Profile>MERN Stack Developer</Profile>
       </MidSection>
-      {theme === "light" ? (
-        <ModeNightIcon
-          onClick={themeToggler}
-          style={{ color: "#DB2048", marginRight: "-1rem" }}
-        />
-      ) : (
-        <LightModeIcon
-          onClick={themeToggler}
-          style={{ color: "#DB2048", marginRight: "-1rem" }}
-        />
-      )}
-      <Link href="#">Scroll Down</Link>
+      <LeftContainer>
+        <div>
+          {theme === "light" ? (
+            <ModeNightIcon
+              onClick={themeToggler}
+              style={{ color: "#DB2048", marginRight: "-1rem" }}
+            />
+          ) : (
+            <LightModeIcon
+              onClick={themeToggler}
+              style={{ color: "#DB2048", marginRight: "-1rem" }}
+            />
+          )}
+        </div>
+        <Link href="#">Scroll Down</Link>
+      </LeftContainer>
     </MainContainer>
   );
 };

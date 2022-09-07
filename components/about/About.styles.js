@@ -1,12 +1,9 @@
 import styled from "styled-components";
+import { Button } from "@mui/material";
 
-export const MainContainer = styled.div`
-  height: 20vh;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 7%;
-  display: flex;
-  flex-direction: column;
+export const MainContainer = styled.section`
+  width: 85%;
+  margin: 0 auto;
 `;
 
 export const TopSection = styled.div`
@@ -26,203 +23,100 @@ export const BigTitle = styled.p`
   margin-top: 1rem;
 `;
 
-export const AboutMeContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
+export const AboutContainer = styled.div`
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 5%;
 
-  @media screen and (max-width: 56.25rem) {
-    display: block;
+  @media screen and (max-width: 64rem) {
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 `;
-export const LeftSection = styled.div`
-  width: 40%;
+export const AboutMe = styled.div`
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-item: center;
 
+  @media screen and (max-width: 64rem) {
+    width: 50%;
+    margin: 2rem auto 4rem;
+  }
+
+  @media screen and (max-width: 37.5rem) {
+    width: 65%;
+    margin: 0 auto 3rem;
+  }
+`;
+export const AboutMeImage = styled.div`
   & img {
-    width: 31.25rem;
-    height: 31.25rem;
-  }
-  @media screen and (max-width: 56.25rem) {
     width: 100%;
-
-    & img {
-      margin-left: 10%;
-    }
-  }
-
-  @media screen and (max-width: 43.75rem) {
-    width: 100%;
-
-    & img {
-      margin-left: 2%;
-    }
-  }
-
-  @media screen and (max-width: 31.25rem) {
-    & img {
-      margin-left: -7rem;
-    }
-  }
-`;
-export const RightSection = styled.div`
-  width: 50%;
-  @media screen and (max-width: 56.25rem) {
-    width: 100%;
+    aspect-ratio: 1/1;
   }
 `;
 
-export const ProjectSection = styled.div`
-  display: flex;
-  margin-top: 3rem;
-  @media screen and (max-width: 31.25rem) {
-    display: block;
-  }
-`;
-export const Experience = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  height: 20vh;
-  text-align: center;
-  padding-top: 1.6rem;
-  transition: border 2s;
-
-  & img {
-    width: 20%;
-    height: 20%;
-    margin-left: 40%;
-  }
-
-  & h6 {
-    color: grey;
-    font-size: 1rem;
-    margin-top: 1rem;
-    font-weight: 500;
-  }
-
+export const AboutContent = styled.div`
   & p {
     color: ${(props) => props.theme.colors.text.primary};
+    margin: 2rem 0 2.6rem;
+    line-height: 1.5rem;
+  }
+
+  @media screen and (max-width: 64rem) {
+    margin: 1rem 0 1.5rem;
+  }
+
+  @media screen and (max-width: 37.5rem) {
+    margin: 1.5rem 0;
+  }
+`;
+
+export const AboutCards = styled.div`
+  color: ${(props) => props.theme.colors.text.secondary};
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  @media screen and (max-width: 37.5rem) {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+`;
+export const AboutCard = styled.article`
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: all 400ms ease;
+  line-height: 2rem;
+  & h5 {
+    color: ${(props) => props.theme.colors.text.ternary};
+    font-size: 0.95rem;
+  }
+  & small {
+    color: grey;
     font-size: 0.7rem;
-    margin-top: 1rem;
   }
 
   &:hover {
     border: 0.062rem solid aqua;
-    border-radius: 1rem;
-  }
-  @media screen and (max-width: 31.25rem) {
-    width: 100%;
-
-    & img {
-      width: 20%;
-      height: 30%;
-      margin-left: 40%;
-    }
-  }
-`;
-export const Client = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  height: 20vh;
-  text-align: center;
-  padding-top: 1.6rem;
-  transition: border 2s;
-
-  & img {
-    width: 20%;
-    height: 20%;
-    margin-left: 40%;
-  }
-
-  & h6 {
-    color: grey;
-    font-size: 1rem;
-    margin-top: 1rem;
-    font-weight: 500;
-  }
-
-  & p {
-    color: ${(props) => props.theme.colors.text.primary};
-    font-size: 0.7rem;
-    margin-top: 1rem;
-  }
-
-  &:hover {
-    border: 0.062rem solid aqua;
-    border-radius: 1rem;
-  }
-  @media screen and (max-width: 31.25rem) {
-    width: 100%;
-
-    & img {
-      width: 20%;
-      height: 30%;
-      margin-left: 40%;
-    }
-  }
-`;
-export const Projects = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  height: 20vh;
-  text-align: center;
-  padding-top: 1.6rem;
-  transition: border 2s;
-
-  & img {
-    width: 20%;
-    height: 20%;
-    margin-left: 40%;
-  }
-
-  & h6 {
-    color: grey;
-    font-size: 1rem;
-    margin-top: 1rem;
-    font-weight: 500;
-  }
-
-  & p {
-    color: ${(props) => props.theme.colors.text.primary};
-    font-size: 0.7rem;
-    margin-top: 1rem;
-  }
-
-  &:hover {
-    border: 0.062rem solid aqua;
-    border-radius: 1rem;
-  }
-  @media screen and (max-width: 31.25rem) {
-    width: 100%;
-
-    & img {
-      width: 20%;
-      height: 30%;
-      margin-left: 40%;
-    }
   }
 `;
 
-export const Intro = styled.p`
+export const StyledButton = styled.a`
+  width: max-content;
+  display: inline - block;
   color: ${(props) => props.theme.colors.text.primary};
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-top: 2rem;
-`;
-
-export const Button = styled.button`
-  color: white;
-  background-color: ${(props) => props.theme.colors.text.secondary};
-  font-size: 1rem;
-  padding: 1rem;
+  padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
-  border: none;
-  margin-top: 4rem;
   cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 400ms ease;
+  background: ${(props) => props.theme.colors.text.secondary};
 
   &:hover {
+    background: #08313b;
     color: #5bd85a;
-    background-color: #22303d;
+    border-color: transparent;
   }
 `;

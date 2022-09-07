@@ -1,23 +1,34 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-  height: 20vh;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 7%;
+  height: 50vh;
+  width: 85%;
+  margin: 0% auto;
+  padding: 7rem;
   display: flex;
+  @media screen and (max-width: 37.5rem) {
+    display: block;
+  }
 `;
 
 export const IconSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  @media screen and (max-width: 37.5rem) {
+    display: none;
+  }
 `;
 
 export const Line = styled.div`
   border-left: 0.1rem solid ${(props) => props.theme.colors.text.secondary};
   height: 20%;
   margin-left: 0.5rem;
+
+  @media screen and (max-width: 37.5rem) {
+    display: none;
+  }
 `;
 
 export const MidSection = styled.div`
@@ -46,9 +57,24 @@ export const Link = styled.a`
   writing-mode: vertical-rl;
   text-orientation: mixed;
   cursor: pointer;
-  margin-top: 4rem;
+  margin-top: 8rem;
 
   &:hover {
     color: ${(props) => props.theme.colors.text.primary};
+  }
+  @media screen and (max-width: 37.5rem) {
+    display: none;
+  }
+`;
+
+export const LeftContainer = styled.div`
+  @media screen and (max-width: 37.5rem) {
+    & div {
+      display: block;
+      left: 90%;
+      z-index: 2;
+      position: fixed;
+      top: 10%;
+    }
   }
 `;

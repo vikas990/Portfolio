@@ -20,6 +20,11 @@ const GlobalStyles = createGlobalStyle`
     background-color: ${(props) => props.theme.colors.bg.primaryBg};
   }
   
+  .container{
+    width:75%;
+    margin:0 auto;
+  }
+
   h1,
   h2,
   h3,
@@ -36,6 +41,12 @@ const GlobalStyles = createGlobalStyle`
   
   li {
     list-style: none;
+  }
+
+  img{
+    display:block;
+    object-fit:cover;
+    width:100%;
   }
 `;
 

@@ -1,12 +1,8 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.section`
-  height: 20vh;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 30%;
-  display: flex;
-  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
 `;
 
 export const TopSection = styled.div`
@@ -26,25 +22,75 @@ export const BigTitle = styled.p`
   margin-top: 1rem;
 `;
 
-export const MainSection = styled.div`
-  width: 100%;
-`;
+export const SkillContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 
-export const LeftSection = styled.div`
-  width: 50%;
-  height: 50vh;
-  margin-top: 4rem;
-  transition: border 2s;
-  text-align: center;
-
-  &:hover {
-    border: 0.062rem solid aqua;
-    border-radius: 4rem;
+  @media screen and (max-width: 64rem) {
+    grid-template-columns: 1fr;
   }
 `;
 
-export const LeftSectionHeading = styled.p`
+export const Frontend = styled.div`
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  transition: all 400ms ease;
+
+  &:hover {
+    border: 0.062rem solid aqua;
+  }
+
+  & h3 {
+    color: ${(props) => props.theme.colors.text.secondary};
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 64rem) {
+    width: 80%;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+`;
+
+export const FrontendContent = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+`;
+
+export const Backend = styled.div`
   color: ${(props) => props.theme.colors.text.secondary};
-  font-size: 1.5rem;
-  margin-top: 3rem;
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  transition: all 400ms ease;
+
+  &:hover {
+    border: 0.062rem solid aqua;
+  }
+
+  & h3 {
+    color: ${(props) => props.theme.colors.text.secondary};
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+`;
+
+export const BackendContent = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+`;
+
+export const SkillDetails = styled.article`
+  color: ${(props) => props.theme.colors.text.secondary};
+  display: flex;
+  gap: 1rem;
+  & h4 {
+    color: ${(props) => props.theme.colors.text.primary};
+  }
+  & small {
+    color: grey;
+  }
 `;
