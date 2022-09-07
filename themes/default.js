@@ -7,6 +7,10 @@ const dark = {
     text: {
       primary: "white",
       secondary: "#DB2048",
+      ternary: "white",
+      navBackground: "black",
+      linkBgColor: "#DB2048",
+      navColor: "grey",
     },
 
     primary: {
@@ -31,6 +35,10 @@ const light = {
     text: {
       primary: "black",
       secondary: "#DB2048",
+      ternary: "white",
+      navBackground: "white",
+      linkBgColor: "grey",
+      navColor: "white",
     },
 
     primary: {

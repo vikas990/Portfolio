@@ -11,7 +11,7 @@ import {
 
 const Skill = () => {
   return (
-    <MainContainer>
+    <MainContainer id="skill">
       <TopSection>
         <SmallTitle>What Skill I Have</SmallTitle>
         <BigTitle>My Experience</BigTitle>

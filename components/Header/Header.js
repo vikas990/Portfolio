@@ -20,7 +20,7 @@ const Header = ({ setTheme, theme }) => {
   };
 
   return (
-    <MainContainer>
+    <MainContainer id="Home">
       <IconSection>
         <Image
           src="/images/linkedin.png"

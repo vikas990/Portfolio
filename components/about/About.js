@@ -16,7 +16,7 @@ import {
 
 const About = () => {
   return (
-    <MainContainer>
+    <MainContainer id="about">
       <TopSection>
         <SmallTitle>Get to Know</SmallTitle>
         <BigTitle>About me</BigTitle>
