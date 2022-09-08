@@ -37,7 +37,7 @@ const Nav = () => {
         <BookOutlinedIcon />
       </a>
       <a
-        href="#services"
+        href="#projects"
         onClick={() => ChangeActiveState("#services")}
         className={active === "#services" ? "active" : ""}
       >
