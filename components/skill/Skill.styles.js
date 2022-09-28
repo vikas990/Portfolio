@@ -50,7 +50,7 @@ export const Frontend = styled.div`
   @media screen and (max-width: 64rem) {
     width: 80%;
     padding: 2rem;
-    margin: 0 auto;
+    margin-left: 20%;
   }
 `;
 
@@ -74,6 +74,12 @@ export const Backend = styled.div`
     color: ${(props) => props.theme.colors.text.secondary};
     text-align: center;
     margin-bottom: 2rem;
+  }
+
+  @media screen and (max-width: 64rem) {
+    width: 80%;
+    padding: 2rem;
+    margin-left: 20%;
   }
 `;
 
