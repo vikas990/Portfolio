@@ -49,7 +49,7 @@ const Contact = () => {
     e.target.reset;
   };
   return (
-    <MainContainer id="skill">
+    <MainContainer id="contact">
       <TopSection>
         <SmallTitle>Get In Touch</SmallTitle>
         <BigTitle>Contact Me</BigTitle>
