@@ -43,6 +43,17 @@ export const PortfolioItem = styled.article`
   border-radius: 2rem;
   border: 0.062rem solid aqua;
   transition: all 400ms ease;
+  padding: 2rem;
+
+  & div a:last-child {
+    margin-left: 3rem;
+  }
+
+  @media screen and (max-width: 20rem) {
+    & div a:last-child {
+      margin-left: 0;
+    }
+  }
 
   &:hover {
     border: 0.062rem solid ${(props) => props.theme.colors.text.secondary};
@@ -56,16 +67,12 @@ export const PortfolioItem = styled.article`
 export const PortfolioItemImage = styled.div`
   border-radius: 1.5rem;
   overflow: hidden;
-  & img {
-    width: 100%;
-    height: 100%;
-  }
 `;
 
 export const PortfolioCta = styled.div`
   display: flex;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 `;
 
 export const StyledButton = styled.a`

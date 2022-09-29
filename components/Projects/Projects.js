@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import {
   BigTitle,
@@ -69,13 +70,20 @@ const Projects = () => {
           <>
             <PortfolioItem>
               <PortfolioItemImage>
-                <img src={project.img} alt="project1" />
+                <Image
+                  src={project.img}
+                  alt="project1"
+                  width={500}
+                  height={300}
+                />
               </PortfolioItemImage>
               <h3>{project.title}</h3>
-              <StyledOutlinedButton href={project.github}>
-                Github
-              </StyledOutlinedButton>
-              <StyledButton href={project.demo}>Live Demo</StyledButton>
+              <div>
+                <StyledOutlinedButton href={project.github}>
+                  Github
+                </StyledOutlinedButton>
+                <StyledButton href={project.demo}>Live Demo</StyledButton>
+              </div>
             </PortfolioItem>
           </>
         ))}
