@@ -8,6 +8,7 @@ export const MainContainer = styled.section`
 export const TopSection = styled.div`
   width: 100%;
   text-align: center;
+  margin-bottom: 3rem;
 `;
 
 export const SmallTitle = styled.p`

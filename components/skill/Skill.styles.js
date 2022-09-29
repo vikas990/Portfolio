@@ -52,6 +52,10 @@ export const Frontend = styled.div`
     padding: 2rem;
     margin-left: 20%;
   }
+
+  @media screen and (max-width: 25rem) {
+    margin-left: 5%;
+  }
 `;
 
 export const FrontendContent = styled.div`
@@ -80,6 +84,10 @@ export const Backend = styled.div`
     width: 80%;
     padding: 2rem;
     margin-left: 20%;
+  }
+
+  @media screen and (max-width: 25rem) {
+    margin-left: 5%;
   }
 `;
 
