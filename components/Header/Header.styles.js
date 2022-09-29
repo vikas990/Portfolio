@@ -16,6 +16,10 @@ export const IconSection = styled.div`
   flex-direction: column;
   justify-content: space-around;
 
+  & a {
+    color: ${(props) => props.theme.colors.text.secondary};
+  }
+
   @media screen and (max-width: 37.5rem) {
     display: none;
   }

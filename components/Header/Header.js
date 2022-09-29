@@ -1,4 +1,7 @@
 import Image from "next/image";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 import React, { useEffect } from "react";
 import {
@@ -23,24 +26,23 @@ const Header = ({ setTheme, theme }) => {
   return (
     <MainContainer id="Home">
       <IconSection>
-        <Image
-          src="/images/linkedin.png"
-          alt="Instagram icon"
-          height={20}
-          width={20}
-        />
-        <Image
-          src="/images/github.png"
-          alt="Instagram icon"
-          height={20}
-          width={20}
-        />
-        <Image
-          src="/images/instagram.png"
-          alt="Instagram icon"
-          height={20}
-          width={20}
-        />
+        <a href="https://github.com/vikas990" target="_blank" rel="noreferrer">
+          <GitHubIcon />
+        </a>
+        <a
+          href="https://www.instagram.com/vikas_kumar_31/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <InstagramIcon />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/vikas-kumar-3469b4164/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <LinkedInIcon />
+        </a>
         <Line />
       </IconSection>
       <MidSection>
@@ -53,16 +55,24 @@ const Header = ({ setTheme, theme }) => {
           {theme === "light" ? (
             <ModeNightIcon
               onClick={themeToggler}
-              style={{ color: "#DB2048", marginRight: "-1rem" }}
+              style={{
+                color: "#DB2048",
+                marginRight: "-1rem",
+                cursor: "pointer",
+              }}
             />
           ) : (
             <LightModeIcon
               onClick={themeToggler}
-              style={{ color: "#DB2048", marginRight: "-1rem" }}
+              style={{
+                color: "#DB2048",
+                marginRight: "-1rem",
+                cursor: "pointer",
+              }}
             />
           )}
         </div>
-        <Link href="#">Scroll Down</Link>
+        <Link href="#contact">Scroll Down</Link>
       </LeftContainer>
     </MainContainer>
   );
