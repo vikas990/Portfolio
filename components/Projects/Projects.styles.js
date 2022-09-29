@@ -49,7 +49,7 @@ export const PortfolioItem = styled.article`
     margin-left: 3rem;
   }
 
-  @media screen and (max-width: 20rem) {
+  @media screen and (max-width: 25rem) {
     & div a:last-child {
       margin-left: 0;
     }
@@ -91,6 +91,10 @@ export const StyledButton = styled.a`
     color: #5bd85a;
     border-color: transparent;
   }
+
+  @media screen and (max-width: 25rem) {
+    padding: 0.3rem 0.5rem;
+  }
 `;
 
 export const StyledOutlinedButton = styled.a`
@@ -108,5 +112,9 @@ export const StyledOutlinedButton = styled.a`
     background: #08313b;
     color: #5bd85a;
     border-color: transparent;
+  }
+
+  @media screen and (max-width: 25rem) {
+    padding: 0.3rem 0.5rem;
   }
 `;
