@@ -18,44 +18,9 @@ const Projects = () => {
     {
       id: 1,
       img: "/images/project1.png",
-      title: "Vaxine Time",
-      github: "https://github.com/",
-      demo: "https://www.google.com/",
-    },
-    {
-      id: 2,
-      img: "/images/project2.png",
-      title: "Tes2022",
-      github: "https://github.com/",
-      demo: "https://www.google.com/",
-    },
-    {
-      id: 3,
-      img: "/images/project3.jpeg",
-      title: "MyWays",
-      github: "https://github.com/",
-      demo: "https://www.google.com/",
-    },
-    {
-      id: 4,
-      img: "/images/project4.jpeg",
-      title: "Hello world",
-      github: "https://github.com/",
-      demo: "https://www.google.com/",
-    },
-    {
-      id: 5,
-      img: "/images/project5.jpeg",
-      title: "Plant your future",
-      github: "https://github.com/",
-      demo: "https://www.google.com/",
-    },
-    {
-      id: 6,
-      img: "/images/project6.jpeg",
-      title: "Event Manager",
-      github: "https://github.com/",
-      demo: "https://www.google.com/",
+      title: "Portfolio",
+      github: "https://github.com/vikas990/Portfolio.git",
+      demo: "https://6335eb7f12851626a65c6f91--cheerful-halva-ef7afa.netlify.app/",
     },
   ];
 

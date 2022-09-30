@@ -62,6 +62,7 @@ export const PortfolioItem = styled.article`
 
   & h3 {
     margin: 1.2rem 0 2rem;
+    color: ${(props) => props.theme.colors.text.secondary};
   }
 `;
 
