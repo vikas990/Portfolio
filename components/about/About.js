@@ -34,17 +34,17 @@ const About = () => {
             <AboutCard>
               <WorkOutlineOutlinedIcon />
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>11 months Working</small>
             </AboutCard>
-            <AboutCard>
+            {/*<AboutCard>
               <GroupOutlinedIcon />
               <h5>Clients</h5>
               <small>300+ Worldwide</small>
-            </AboutCard>
+  </AboutCard>*/}
             <AboutCard>
               <FolderZipOutlinedIcon />
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>5+ Completed</small>
             </AboutCard>
           </AboutCards>
           <p>

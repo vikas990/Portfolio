@@ -20,7 +20,7 @@ const Projects = () => {
       img: "/images/project1.png",
       title: "Portfolio",
       github: "https://github.com/vikas990/Portfolio.git",
-      demo: "https://6335eb7f12851626a65c6f91--cheerful-halva-ef7afa.netlify.app/",
+      demo: "https://cheerful-halva-ef7afa.netlify.app/",
     },
   ];
 
