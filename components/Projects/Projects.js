@@ -22,6 +22,13 @@ const Projects = () => {
       github: "https://github.com/vikas990/Portfolio.git",
       demo: "https://cheerful-halva-ef7afa.netlify.app/",
     },
+      {
+      id: 2,
+      img: "/images/project2.png",
+      title: "Portfolio",
+      github: "https://github.com/vikas990/Dashboard",
+      demo: "https://aquamarine-capybara-bd2a76.netlify.app/",
+    },
   ];
 
   return (
