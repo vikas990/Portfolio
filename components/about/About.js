@@ -34,7 +34,7 @@ const About = () => {
             <AboutCard>
               <WorkOutlineOutlinedIcon />
               <h5>Experience</h5>
-              <small>11 months Working</small>
+              <small>2.5 years</small>
             </AboutCard>
             {/*<AboutCard>
               <GroupOutlinedIcon />
@@ -44,13 +44,12 @@ const About = () => {
             <AboutCard>
               <FolderZipOutlinedIcon />
               <h5>Projects</h5>
-              <small>5+ Completed</small>
+              <small>2 Completed</small>
             </AboutCard>
           </AboutCards>
           <p>
-            Myself Vikas Kumar, Post Graduate from Vellore Institute of
-            Technology with a CGPA of 8.92. Currently Working as Team Leader at
-            Bank of America.Also Have a passion about Web Development😄
+            I Vikas Kumar, working as a Team Leader at Bank of America, I have 2.5 years of experience in working with Reactjs, Nextjs, Nodejs, CSS, HTML, Javascript, SASS, Styled-components, Material-UI, Bootstrap, MongoDB, SQL
+            Currently looking for some challenges and learnings.
           </p>
           <StyledButton href="#">Let&apos;s Talk</StyledButton>
         </AboutContent>
